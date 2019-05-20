@@ -1,0 +1,7 @@
+apply from: '../node_modules/react-native-unimodules/gradle.groovy'
+includeUnimodulesProjects()
+
+rootProject.name = 'uni'
+include ':expo-ads-facebook'
+project(':expo-ads-facebook').projectDir = new File(rootProject.projectDir, '../node_modules/expo-ads-facebook/android')
+include ':app'
